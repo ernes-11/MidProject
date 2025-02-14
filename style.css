@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.background-color{
+    background-color:rgb(238, 232, 223);
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+h1{
+    letter-spacing: 5px;
+    margin-top: 80px;
+    margin-bottom: 90px;
+
+    color: rgb(156, 58, 58);
+    overflow: hidden;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+    animation-name: geser;
+    animation-fill-mode: forwards;
+}
+
+@keyframes geser {
+    from {
+        translate: 800px 0;
+    }
+    to {
+        translate: 420px;
+    }
+}
+
+/* .judul{ */
+    /* margin-top: 100px; */
+    /* margin-left: 60px; */
+/* } */
+
+
+
+img{
+    margin-left: 250px;
+    border-radius: 100%;
+    width: 300px;
+}
+
+.aboutme{
+    display: flex;
+    margin-top: 60px;
+}
+
+.sblh-gmbr{
+    margin-top: 70px;
+    margin-left: 170px;
+    margin-right: 210px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.sblh-gmbr h3{
+    margin-bottom: 20px;
+    color: rgb(129, 59, 38);
+}
+.sblh-gmbr p{
+    font-size: smaller;
+}
+
+h2{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-left: 170px;
+    letter-spacing: 0.5px;
+}
+
+.pnd{
+    margin-top: 50px;
+}
+.pnd h3{
+    text-align: center;
+    color: #333;
+    font-size: larger;
+    letter-spacing: 1px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: rgb(252, 228, 196);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    margin: 20px auto;
+    margin-bottom: 70px;
+}
+
+th{
+    color: #3e3838;
+}
+
+td{
+    color: rgb(88, 78, 78);
+}
+
+th, td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #706565;
+    border-right: 1px solid #706565;
+}
+
+
+/* experience */
+.container1{
+    width: 990px;
+    margin-top: 60px;
+    margin-left: 270px;
+    margin-bottom: 70px;
+    border: 2px solid rgba(200,198,196,255);
+    display: flex;
+    gap: 5px;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.isi-kotak{
+    width: 100%; 
+}
+
+.judul-kotak{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.isi-kotak p{
+    font-size: smaller;
+}
+
+/* skill */
+.skillbox{
+    margin-top: 60px;
+    margin-left: 270px;
+    margin-right: 200px;
+    display: flex;
+    flex-wrap: wrap;   /*---- supaya ga ofside*/
+    gap: 18px;
+    justify-content: flex-start;
+    margin-bottom: 80px;
+}
+
+.container2{
+    width: auto;
+    height: auto;
+    border: 2px solid rgba(200,198,196,255);
+    background-color: rgb(245, 234, 205);   
+}
+
+.container2 p{
+    padding: 15px;
+}
+
+/* porto */
+.wrapper {
+    width: 90%;
+    max-width: 990px;
+    margin-inline: auto;
+    position: relative;
+    height: 200px;
+    margin-top: 70px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+    margin-bottom: 70px;
+}
+  
+@keyframes scrollLeft {
+    to {
+        left: -500px;
+    }
+}
+  
+.item {
+   position: absolute;
+   left: max(calc(200px * 5), 100%);
+   animation-name: scrollLeft;
+   animation-duration: 10s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+
+.item1 {
+    animation-delay: calc(10s / 5 * (5 - 1) * -1);
+}
+  
+.item2 {
+    animation-delay: calc(10s / 5 * (5 - 2) * -1);
+}
+  
+.item3 {
+    animation-delay: calc(10s / 5 * (5 - 3) * -1);
+}
+  
+.item4 {
+    animation-delay: calc(10s / 5 * (5 - 4) * -1);
+}
+  
+.item5 {
+    animation-delay: calc(10s / 5 * (5 - 5) * -1);
+}
+
+/* contact */
+.contact{
+    margin-top:60px;
+    margin-left: 270px;
+    margin-bottom: 100px;
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+}
+
+.yh{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.yh input{
+    margin-left: auto;
+}
