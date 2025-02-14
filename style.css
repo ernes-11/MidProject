@@ -231,3 +231,22 @@ th, td{
 .yh input{
     margin-left: auto;
 }
+
+
+@media (max-width: 1024px){
+    .background-color {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .aboutme{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1{
+        width: auto;
+    }
+
+}   
